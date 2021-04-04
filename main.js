@@ -1,21 +1,23 @@
-var peso;
+function calculaIMC() {
+    let peso, altura;
 
-peso = parseFloat(prompt("Entre com o peso:"))
-altura = parseFloat(prompt("Entre com o altura:"))
+    peso = parseFloat(document.getElementById("peso").value)
+    altura = parseFloat(document.getElementById("altura").value)
 
-imc = peso / (Math.pow(altura, 2))
+    imc = peso / (Math.pow(altura, 2))
 
-if (imc < 18.5) {
-    alert("Abaixo do peso")
-} else {
-
-    if (imc < 25) {
-        alert("Peso normal")
+    if (imc < 18.5) {
+        alert("Abaixo do peso")
     } else {
-        if (imc < 30) {
-            alert("Sobrepeso")
+
+        if (imc < 25) {
+            alert("Peso normal")
         } else {
-            alert("Obesidade")
+            if (imc < 30) {
+                alert("Sobrepeso")
+            } else {
+                alert("Obesidade")
+            }
         }
     }
 }
