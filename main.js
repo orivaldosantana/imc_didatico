@@ -6,18 +6,19 @@ function calculaIMC() {
 
     imc = peso / (Math.pow(altura, 2))
 
+    let resultado = ""
     if (imc < 18.5) {
-        alert("Abaixo do peso")
+        resultado = "Abaixo do peso"
     } else {
-
         if (imc < 25) {
-            alert("Peso normal")
+            resultado = "Peso normal"
         } else {
             if (imc < 30) {
-                alert("Sobrepeso")
+                resultado = "Sobrepeso"
             } else {
-                alert("Obesidade")
+                resultado = "Obesidade"
             }
         }
     }
+    document.getElementById("resultado").innerHTML = resultado;
 }

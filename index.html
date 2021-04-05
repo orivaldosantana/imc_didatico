@@ -13,11 +13,17 @@
 <body>
     <h1>Calcular IMC</h1>
     <form>
-        <label for="peso">Entre com o peso:</label><br>
-        <input type="text" id="peso" name="peso"><br>
-        <label for="altura">Entre com o altura:</label><br>
-        <input type="text" id="altura" name="altura">
+        <div>
+            <label for="peso">Entre com o peso:</label><br>
+            <input type="text" id="peso" name="peso"><br>
+            <label for="altura">Entre com o altura:</label><br>
+            <input type="text" id="altura" name="altura">
+        </div>
+        <div>
+            <button type="button" onclick="calculaIMC()">Calcular</button>
+        </div>
     </form>
+    <p id="resultado"> ? </p>
 </body>
 
 </html>
